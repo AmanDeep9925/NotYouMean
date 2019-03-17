@@ -1,5 +1,5 @@
 #include <iostream>
-#include "myalgo.h"
+#include "myio.h"
 using namespace std;
 
 void bubSort(int arr[], int n) {

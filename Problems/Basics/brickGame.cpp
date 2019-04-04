@@ -1,20 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-	int n;
-	cin >> n;
+int main() {
+	int N, i = 1;
+	cin >> N;
 
-	for(int i=0;;i++){
-		if(n-1 <= 0){
-			cout << "Patlu";
+	while (1) {
+		N = N - 1;
+		if (N <= 0) {
+			cout << "Patlu \n";
 			break;
 		}
-		else n=n-1;
-		if((n-2*i) <=0){
-			cout << "Motu";
+		N = N - 2*i;
+		if(N<=0){
+			cout << "Motu \n";
 			break;
 		}
-		else n=n-(2*i);
+		i++;
 	}
 }
